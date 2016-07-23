@@ -1,0 +1,23 @@
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' \
+  IDENTIFIED BY '123456';
+
+935f5eb661eacd90f73a
+
+connection = mysql://keystone:123456@controller/keystone
+
+GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'localhost' \
+  IDENTIFIED BY '123456';
+
+
+
+
+connection = mysql://neutron:123456@controller/neutron
+
+
+Íâ²¿Íø£º
+neutron subnet-create ext-net 10.20.67.0/16 --name ext-subnet \
+  --allocation-pool start=10.20.67.101,end=10.20.67.200 \
+  --disable-dhcp --gateway 10.20.0.7
+
+Added interface 70ea8f85-6036-4f60-8eaa-9b2caad1cc21 to router demo-router.
+

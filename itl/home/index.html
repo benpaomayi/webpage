@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://sc.admin5.com/?w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://sc.admin5.com/?w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ITL</title>
+
+<link rel="stylesheet" href="css/metro.css">
+
+<script type="text/javascript" src="script/jquery-1.4.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var box_h=$("#metro_box").height();
+	var box_w=$("#metro_box").width();
+	$("#metro_box").css("margin-top",(($(window).height()-box_h)/2)-10+"px");
+	//var img_h=$(".arr_left img").height();
+	//var img_w=$(".arr_left img").width();
+	//$(".prev").css("position","absolute").css("left","10px").css("top",($(window).height()-img_h)/2);
+	//$(".next").css("position","absolute").css("right","10px").css("top",($(window).height()-img_h)/2);
+	//链接在新窗口打开
+	$(".a_link dd a").attr("target","_blank");
+	$(".a_link ul li>a").hover(function(){
+		var a_href=$(this).attr("href");			
+		$(this).siblings().find("a").attr("href",a_href);
+	});
+	
+	//切屏-----------------------------------------------------------------
+	$("#top dl dd a").click(function(){
+		var now_class=$(this).attr("class");	
+		$("#top dl dd a.a_index").attr("class","a_index");
+		$("#top dl dd a.a_mzdw").attr("class","a_mzdw");
+		$("#top dl dd a.a_spyy").attr("class","a_spyy");
+		$("#top dl dd a.a_xwzx").attr("class","a_xwzx");
+		$("#top dl dd a.a_gwtb").attr("class","a_gwtb");
+		$("#top dl dd a.a_yxyl").attr("class","a_yxyl");
+		$("#top dl dd a.a_sygj").attr("class","a_sygj");
+		$("#top dl dd a.a_yszy").attr("class","a_yszy");
+		$(this).attr("class",now_class).addClass(now_class+"_h");			
+		var index=$(this).index();
+		$("#metro_box dd").hide();
+		$("#metro_box dd").eq(index).toggle(100);
+		if(index==1){
+			$("body").attr("class","bg0");	
+		}
+		switch (index){
+			case 0:
+				$("body").attr("class","bg");						
+				break;
+			case 1:
+				$("body").attr("class","bg0");					
+				break;
+			case 2:
+				$("body").attr("class","bg1");						
+				break;
+			case 3:
+				$("body").attr("class","bg2");					
+				break;
+			case 4:
+				$("body").attr("class","bg3");					
+				break;
+			case 5:
+				$("body").attr("class","bg4");						
+				break;	
+			case 6:
+				$("body").attr("class","bg5");						
+				break;	
+			default :
+				$("body").attr("class","bg6");						
+		}
+		
+		<!--[if IE 6]>$("#metro_box dd").eq(index).show(300);<![endif]-->			
+	});
+});
+</script>
+</head>
+<body>
+<!--头部导航开始-->
+<div id="top">
+	<dl>
+		<dt><a href="" target="_blank">ITL实验室</a></dt>
+		
+	</dl>
+</div>
+<!--头部导航结束--> 
+<!--logo区开始-->
+<div id="metro_box" class="a_link">
+	<dl>
+		<dd style="display:none;">
+			<!--购物淘宝-->
+			
+		</dd>
+		<dd style="display:bolck;">
+			<!--名站导航-->
+			<ul>
+				<li class="one" ></li>
+				<li ></li>
+				<li ></li>
+				<li ></li>
+				<li class="one" ></li>
+				<li id="logo_003"><a href=""><img src="images/logo_006.png" width="239" height="120" alt=""></a><span><a href="http://localhost/itl/wss/wss">科研信息管理系统</a></span></li>
+				<li id="logo_007"><a href="../itl/index.php"><img src="images/logo_007.png" width="240" height="120" alt=""></a><span><a href="../wss/index.php">科研成果审批系统</a></span></li>
+				<li class="four" ></li>
+				<li class="one" ></li>
+				<li ></li>
+				<li ></li>
+				<li ></li>
+				<li ></li>
+				<li class="one"></li>
+				<li ></li>
+				<li ></li>
+				
+			</ul>
+		</dd>
+		
+		
+</div>
+<!--logo区结束--> 
+<!--左右箭头开始-->
+<div class="prev"></div>
+<div class="next"></div>
+<!--左右箭头结束-->
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>
