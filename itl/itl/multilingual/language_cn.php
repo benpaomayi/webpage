@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 
  
   // *任务优先级
@@ -150,7 +150,7 @@ $multilingual_head_feed = "动态";
 // *** 页面底部(foot.php)
 $multilingual_foot_about = "ITL";
 $multilingual_foot_abouttitle = "ITL实验室";
-$multilingual_foot_officialsite = " @zouxi";
+$multilingual_foot_officialsite = " @zx";
 $multilingual_foot_officialsitetitle = "关于ITL最新的资讯";
 $multilingual_foot_feedback = "<a href='http://www.wssys.net/zh-cn/feedback.php' target='_blank' title='我们将在第一时间对您提出的问题给予答复'>问题反馈</a>";
 $multilingual_foot_feedbacktitle = "欢迎您能给我们提更多的意见";
@@ -249,17 +249,17 @@ $multilingual_tasklog_live = "剩余";
 $multilingual_tasklog_overday = "";
 $multilingual_tasklog_liveday = "距审批时间";
 $multilingual_tasklog_day = "天(含节假日)";
-$multilingual_tasklog_changeuser = "修改审批执行人";
+$multilingual_tasklog_changeuser = "更改审批老师";
 $multilingual_tasklog_changeto = "审批执行人修改为";
 $multilingual_tasklog_status = "请选择任务状态";
 $multilingual_tasklog_delmsg1 = "是否删除该任务";
 $multilingual_tasklog_delmsg2 = "日的工作日志及其相关评论？";
-$multilingual_taskstatus_title = "日志/任务状态管理";
+$multilingual_taskstatus_title = "审批状态管理";
 $multilingual_taskstatus_new = "新建状态";
 $multilingual_taskstatus_name = "状态名称";
 $multilingual_taskstatus_style = "状态显示样式";
 $multilingual_taskstatus_edit = "编辑状态";
-$multilingual_tasktype_title = "任务类型管理";
+$multilingual_tasktype_title = "审批类型管理";
 $multilingual_tasktype_new = "新事务类型";
 $multilingual_tasktype_edit = "编辑任务类型";  
 $multilingual_tasktype_name = "事务类型名称";
@@ -355,7 +355,7 @@ $multilingual_projectlist_edit = "重新编辑";
 $multilingual_projectsub_title = "子项目管理 / 工作分解结构(WBS)管理";
 $multilingual_projectsub_text = "在ITL 扩展功能中，项目管理功能得到了增强，您可以为一个项目创建多个子项目，从而解决项目过多不易管理的问题。<br />
 您还可以将一个项目分解为多个任务包，从而实现项目的“工作分解结构(WBS)”，更加专业化的管理项目。";
-$multilingual_projectstatus_title = "项目状态管理";
+$multilingual_projectstatus_title = "成果状态管理";
 $multilingual_projectstatus_new = "新建成果状态";
 $multilingual_projectstatus_name = "成果状态名称";
 $multilingual_projectstatus_style = "成果状态显示样式";
@@ -456,7 +456,7 @@ $multilingual_user_tip_name = "建议用户名为真实姓名";
 $multilingual_user_tip_dis = "角色为禁用的用户将被禁止登录系统  <a href='' target='_blank'>角色说明</a>";
 $multilingual_user_tip_mail = "用于邮件提醒，如开启邮件提醒服务，请务必要求每一个用户填写该项";
 $multilingual_user_sorrytip = "没有符合条件的用户";
-$multilingual_user_namequired = "2-12个字符";
+$multilingual_user_namequired = "2-36个字符";
 $multilingual_user_alpha = "用户帐号只允许使用字母、数字或下划线";
 $multilingual_dept_title = "实验室管理";
 $multilingual_dept_text = "为了方便管理实验室，我们建了此模块，但由于时间有限，还需要接下来的同学开发。";
@@ -524,7 +524,7 @@ $multilingual_version_error3 = "接口请求错误，<a href='index.php'><b>返�
 $multilingual_upload_title = "上传附件";
 $multilingual_upload_button = "上传";
 $multilingual_upload_tip = "允许上传的文件类型为: 图片、 SWF、 RAR、 Zip、 Html、 Doc、 PPT、 Excel、 TXT， 文件大小不超过";
-$multilingual_upload_tip2 = "调整上传附件的大小，请参考 <a href='' target='_blank'>常见问题解答</a>";
+$multilingual_upload_tip2 = "调整上传附件的大小";
 $multilingual_upload_tip3 = "上传文档的主要附件，如果需要上传多个附件，请点击文本编辑器的“插入文件”图标";
 $multilingual_upload_error1 = "文件不存在！";
 $multilingual_upload_error2 = "文件大小超出限制";
@@ -532,7 +532,7 @@ $multilingual_upload_error3 = "不支持该格式，请打包后上传。";
 $multilingual_upload_error4 = "同名文件已经存在了！";
 $multilingual_upload_error5 = "移动文件出错！";
 $multilingual_upload_error6 = "不能上传此类型文件！";
-$multilingual_upload_done = "已经成功上传，点击“确定”可将该附件添加至任务中。";
+$multilingual_upload_done = "已经成功上传，请点击“确定”。";
 $multilingual_upload_img = "图片预览:";
 $multilingual_upload_file = "文件名:";
 $multilingual_upload_time = "上传时间:";
@@ -542,7 +542,7 @@ $multilingual_upload_attachment = "附件";
 $multilingual_log_title = "操作记录";
 $multilingual_log_addtask = "提交了审核";
 $multilingual_log_edittask = "编辑了任务";
-$multilingual_log_edittaskuser = "将任务转让给";
+$multilingual_log_edittaskuser = "将审批转让给";
 $multilingual_log_addlog1 = "填写了 ";
 $multilingual_log_addlog3 = "修改了 ";
 $multilingual_log_addlog2 = " 日志，任务状态为：";
@@ -593,7 +593,7 @@ $multilingual__time = "接收时间";
 $multilingual__newtask = "提交给您一个新任务:";
 $multilingual__newtaskcomment = "评论了您的任务:";
 $multilingual__exam = "审核了您的任务:";
-$multilingual__edituser = "转让给您一个任务:";
+$multilingual__edituser = "转让给您一个审批:";
 $multilingual__edittask = "更新了来自您的任务:";
 $multilingual_newmessage1 = "【新消息】";
 $multilingual_newmessage2 = "【　　　】";
@@ -610,5 +610,8 @@ $multilingual_getqrcode = "<br />欢迎登陆ITL实验室网站<br /><br />
 ";
 // MY增添
 $multilingual_url1="default_task_add.php".$row_DetailRS1['id']."&formproject=1";
+$multilingual_sendyoujian="成果审批 __";
+$multilingual_sendyoujian2="尊敬的老师，您好 ,";
+$multilingual_sendyoujian3="的成果审批单已经提交，请点击后面的链接登陆成果审批系统审批一下";
 
 ?>

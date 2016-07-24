@@ -2,7 +2,7 @@
 chdir(dirname(__FILE__));
 error_reporting(0);
 $hostname_tankdb = "localhost";    //database host 
-$database_tankdb = "itl";       //database name
+$database_tankdb = "wss";       //database name
 $username_tankdb = "root";         //mysql user name
 $password_tankdb = "123456";             //mysql password
 $tankdb = mysql_connect($hostname_tankdb, $username_tankdb, $password_tankdb) or trigger_error(mysql_error(),E_USER_ERROR);
